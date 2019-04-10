@@ -1,18 +1,22 @@
 package vecka2;
 
-public class Observer {
+public class Observer implements SignalObserver {
 	
-	public static void main(String []args){
-		Signal s = new Signal();
-		s.addSignalObserver(new SignalObserver(){
-			public void updateSignal(double d){
-				
-				printStars((int)d);
-			}
-			
-		});
-		s.addSignalObserver(new SignalWindow());
+	
+//	public static void main(String []args){
+//		Signal s = new Signal();
+//		s.setTheSampler(new Sinus);
+//		s.addSignalObserver(new SignalObserver(){
+//			public void updateSignal(double d){
+//		
+//				printStars((int)d);
+//			}
+//		});
+//	}
+	
+	public void updateSignal(double d){
 		
+		printStars((int)d);
 	}
 	
 	private static void printStars(int x){
