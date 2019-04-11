@@ -1,8 +1,11 @@
-public class Sinus implements Sampler {
+
+
+public class Cosinus implements Sampler{
+	
 	
 	private double t, dt;
 	
-	public Sinus(double start, double deltaT){
+	public Cosinus(double start, double deltaT){
 		t = start;
 		dt = deltaT;
 	}
@@ -15,3 +18,4 @@ public class Sinus implements Sampler {
 	}
 
 }
+

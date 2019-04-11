@@ -1,5 +1,3 @@
-package vecka2;
-
 public class excercise1 {
 	public static void main(String []args){
 		Signal a = new Signal();
