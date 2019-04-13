@@ -1,5 +1,3 @@
-package vecka2;
-
 import javax.swing.*;
 
 public class SignalWindow extends JFrame implements SignalObserver {

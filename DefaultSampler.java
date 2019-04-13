@@ -1,5 +1,3 @@
-package vecka2;
-
 public class DefaultSampler implements Sampler{
 	
 

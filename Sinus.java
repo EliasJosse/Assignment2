@@ -1,5 +1,3 @@
-package vecka2;
-
 public class Sinus implements Sampler {
 	
 	private double t, dt;
