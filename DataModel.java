@@ -1,3 +1,4 @@
+import java.awt.event.MouseListener;
 import java.util.ArrayList;
 import javax.swing.event.*;
 
@@ -14,6 +15,7 @@ public class DataModel
    {
       data = d;
       listeners = new ArrayList<ChangeListener>();
+   
    }
 
    /**
@@ -33,6 +35,8 @@ public class DataModel
    {
       listeners.add(c);
    }
+
+
 
    /**
       Change the data in the model at a particular location
