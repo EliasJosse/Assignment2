@@ -14,8 +14,16 @@ public abstract class ImagePresenter extends Presenter{
 		
 	}
 	
-	public abstract void eastButtonPressed();
+	public void eastButtonPressed(){
+		
+		
+		
+	}
 	
-	public abstract void westButtonPressed();
+	public void westButtonPressed(){
+		
+		
+		
+	}
 	
 }
