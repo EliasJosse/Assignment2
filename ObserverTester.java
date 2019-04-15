@@ -29,10 +29,5 @@ public class ObserverTester
 
       model.attach(barFrame);
       model.attach(frame);
-      //model.attach2(barFrame);
-      
-//      ChangedBar change = new ChangedBar();
-//      barFrame.addMouseListener(change);     
-   }
    
 }

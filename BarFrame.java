@@ -28,11 +28,7 @@ public class BarFrame extends JFrame implements ChangeListener
       
       Icon barIcon = new Icon()
       {
-    	  
-
-    	  
-
-    		 
+    	  	 
          public int getIconWidth() { return ICON_WIDTH; }
          public int getIconHeight() { return ICON_HEIGHT; }
          public void paintIcon(Component c, Graphics g, int x, int y)
@@ -75,8 +71,7 @@ public class BarFrame extends JFrame implements ChangeListener
       pack();
       setVisible(true);
       
-      this.addMouseListener(m);
-     
+      this.addMouseListener(m);     
       
    }
 
@@ -89,8 +84,7 @@ public class BarFrame extends JFrame implements ChangeListener
       a = dataModel.getData();
       repaint();
    }
-   
-   
+     
 	 MouseListener m = new MouseListener(){
 		public void mouseClicked(MouseEvent arg0){}
 		public void mouseEntered(MouseEvent e){}
@@ -112,14 +106,14 @@ public class BarFrame extends JFrame implements ChangeListener
 			else{
 				j = 3;
 			}
-			//CHANGE THE FIELDLIST TO TRIGGER EVENT!?
+
 	        double value = e.getX();
 	  
 	        value = ((value-9)/199)*(Collections.max(a));
 	        
-			System.out.println("x" + e.getX());
-			System.out.println(value);
-				
+	        double scale = Math.pow(10, 2);
+	        value = Math.round(value * scale)/scale;
+	        
 			dataModel.update(j, value);
 			
 			
