@@ -1,14 +1,21 @@
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public abstract class Presenter extends java.applet.Applet implements ActionListener{
+import javax.swing.ImageIcon;
+
+public abstract class Presenter{
 	
-	public void showText(String text){
+	
+	
+	public void updateImage(ImageIcon image){
+		
 		
 		
 		
 	}
-
-	public abstract void eastButtonPressed();
-	public abstract void westButtonPressed();
 	
+
+	public abstract void leftButton();
+	public abstract void rightButton();
+
 }

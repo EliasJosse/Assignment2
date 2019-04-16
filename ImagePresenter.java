@@ -1,25 +1,23 @@
 import java.awt.*;
+import java.awt.event.ActionEvent;
 
 import javax.swing.ImageIcon;
 
-public abstract class ImagePresenter{
-	
-	ImageIcon[] pictures;
+public class SlidShowPresenter extends Presenter{
 		
-	public void showImage(String filename){
-		
-		
-		
-	}
-	
-	public void showText(String text){
-		
-		
+
+
+
+	@Override
+	public void addImages(ImageIcon[] images) {
+		// TODO Auto-generated method stub
 		
 	}
-	
-	public abstract void eastButtonPressed();
-	
-	public abstract void westButtonPressed();
+
+	@Override
+	public ImageIcon NextPicture(ImageIcon[] images) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 }
