@@ -1,6 +1,10 @@
-import java.awt.Component;
+import java.awt.*;
 
-public abstract class ImagePresenter extends Presenter{
+import javax.swing.ImageIcon;
+
+public abstract class ImagePresenter{
+	
+	ImageIcon[] pictures;
 		
 	public void showImage(String filename){
 		
@@ -14,16 +18,8 @@ public abstract class ImagePresenter extends Presenter{
 		
 	}
 	
-	public void eastButtonPressed(){
-		
-		
-		
-	}
+	public abstract void eastButtonPressed();
 	
-	public void westButtonPressed(){
-		
-		
-		
-	}
+	public abstract void westButtonPressed();
 	
 }
